@@ -25,6 +25,4 @@ int main()
     int c;
     c = add(1,4);
     printNumber(c);
-
-    system("pause");
 }

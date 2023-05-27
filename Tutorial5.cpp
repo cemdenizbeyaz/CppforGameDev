@@ -38,7 +38,4 @@ int main()
             Condition = false;
         }
     } while (Condition);
-    
-
-    system("pause");
 }

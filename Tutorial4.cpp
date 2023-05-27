@@ -13,8 +13,6 @@ int main()
 {
     // Ask user to enter y or n and then returns response
     AskQuestion();
-
-    system("pause");
 }
 
 void welcome()

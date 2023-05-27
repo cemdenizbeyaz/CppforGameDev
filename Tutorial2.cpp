@@ -18,6 +18,4 @@ int main()
     {
         cout << "a is equal to b." << endl;
     }
-
-    system("pause");
 }

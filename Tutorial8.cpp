@@ -18,8 +18,6 @@ int main()
     Print(myInt);
     Print(myStr, myStr2);
     Print(myInt, myStr);
-
-    system("pause");
 }
 
 void Print(string str)

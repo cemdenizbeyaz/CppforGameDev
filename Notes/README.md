@@ -274,3 +274,22 @@ References provide an alternative name (alias) for an existing variable. They al
 ## Function Overloading
 
 Function overloading allows you to define multiple functions with the same name but different parameter lists. It enables you to create functions that perform similar operations but can accept different types or different numbers of arguments.
+
+## Strings
+
+### C Style Strings
+
++ Null-terminated char arrays
++ Must end with "\0", the null character
+
+**Example:** `char hue[4] = {'R', 'e', 'd', '\0'}`
+
+### C++ Strings
+
++ Include string
++ Like iostream, strings are in the std namespace, std::string
++ Treat strings like variables such as int, char, etc.
++ Initialized with =
++ Must use double quotes
+
+**Example:** `string firstName = "Bruce";`

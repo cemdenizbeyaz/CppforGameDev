@@ -11,6 +11,4 @@ int main()
 
 	cout << myCharacter << endl;
 	cout << myInt << endl;
-
-	system("pause");
 }
