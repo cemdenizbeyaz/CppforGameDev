@@ -240,3 +240,37 @@ do
 ```
 5
 ```
+
+## For Loops
+
+For loop is a control flow statement that allows you to repeatedly execute a block of code for a specific number of times. It provides a compact way to define the initialization, condition, and update steps within a single line.
+
+**Examples**
+
+```
+for (initialization; condition; update)
+{
+    // Code to be executed
+}
+```
+
+```
+for (int i = 1; i <= 5; i++)
+{
+    cout << i << " ";
+}
+```
+
+**Output**
+
+```
+1 2 3 4 5
+```
+
+## References
+
+References provide an alternative name (alias) for an existing variable. They allow you to create a new name that refers to the same memory location as the original variable. References are often used for function parameters, enabling pass-by-reference semantics, which allows modifications to the referenced variable within the function. Additionally, references are used to avoid unnecessary copying of objects, providing a more efficient way to work with large data structures.
+
+## Function Overloading
+
+Function overloading allows you to define multiple functions with the same name but different parameter lists. It enables you to create functions that perform similar operations but can accept different types or different numbers of arguments.
