@@ -293,3 +293,30 @@ Function overloading allows you to define multiple functions with the same name 
 + Must use double quotes
 
 **Example:** `string firstName = "Bruce";`
+
+## Constants
+
++ Constants are fixed values that cannot be modified during the execution of a program. They are used to represent unchanging values or values that should not be modified to ensure program correctness and readability.
+
+**Example:** `const float numberPi = 3.14159;`
+
+**Example 2**
+
+```
+void AddOne (const int A)
+{
+    A++; // ERROR!
+}
+```
+
+## And - Or Operators
+
+**AND operator (&&):** The AND operator evaluates to true if and only if both of its operands are true. Otherwise, it evaluates to false.
+
+**OR operator (||):** The OR operator evaluates to true if at least one of its operands is true. It evaluates to false only if both operands are false.
+
+## Arrays
+
+Arrays are data structures that allow you to store multiple elements of the same type in contiguous memory locations. They provide a way to efficiently organize and access a collection of values.
+
+**Example:** `int myArray[5] = {2, 4, 6, 8, 10};`
