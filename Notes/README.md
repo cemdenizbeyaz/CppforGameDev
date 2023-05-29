@@ -448,3 +448,13 @@ Constructors are special member functions of a class that are called automatical
 ## Inheritance
 
 Inheritance is a fundamental concept in object-oriented programming that allows classes to inherit properties and behaviors from other classes. It facilitates code reuse, modularity, and the creation of hierarchies of related classes.
+
+## Access Modifiers
+
+Access modifiers are keywords that control the visibility and accessibility of class members (variables and functions) from outside the class. They define the level of access granted to different parts of the program.
+
++ **Public:** The public access modifier allows class members to be accessed from anywhere in the program. Public members are accessible by objects of the class, as well as external functions and other classes.
+
++ **Protected:** The protected access modifier allows class members to be accessed by the class itself and its derived classes. Protected members are not accessible from outside the class hierarchy. They are typically used to provide restricted access to certain members within the class hierarchy.
+
++ **Private:** The private access modifier restricts the access to class members only within the class itself. Private members are not accessible by derived classes or external functions. They are used to encapsulate and hide implementation details, ensuring data integrity and promoting data abstraction.
