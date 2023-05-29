@@ -377,3 +377,24 @@ switch (day) {
 
 **Output**
 `Thursday`
+
+## Structs
+
+Structs are user-defined data types that allow you to group together related variables of different types into a single unit. They provide a way to create complex data structures and represent entities with multiple attributes.
+
+**Example**
+
+```
+struct Person {
+    string name;
+    int age;
+    string address;
+};
+
+int main() {
+    Person person1;
+    person1.name = "John Doe";
+    person1.age = 30;
+    person1.address = "123 Main Street";
+}
+```
