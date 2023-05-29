@@ -420,3 +420,31 @@ cout << ptr* << endl;
 0x61ff14
 2
 ```
+
+## Classes
+
+Classes are user-defined data types that encapsulate data and functions into a single entity. They serve as a blueprint for creating objects, providing a way to define the structure, behavior, and interactions of objects in a program. Classes are the foundation of object-oriented programming (OOP) in C++.
+
+**Example**
+
+```
+class Dog
+{
+    string Name;
+    void bark()
+    {
+        cout << "Woof! << endl;
+    }
+}
+
+Dog Spot;
+Dog Rex;
+```
+
+## Constructors
+
+Constructors are special member functions of a class that are called automatically when an object of that class is created. They are used to initialize the object's data members and establish its initial state.
+
+## Inheritance
+
+Inheritance is a fundamental concept in object-oriented programming that allows classes to inherit properties and behaviors from other classes. It facilitates code reuse, modularity, and the creation of hierarchies of related classes.
