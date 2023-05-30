@@ -490,3 +490,40 @@ In C++, the **static** keyword is used to declare entities (variables, functions
 ## Virtual Functions (Tutorial 22)
 
 In C++, a virtual function is a member function of the parent class that can be overridden in the child class.
+
+## Polymorphism (Tutorial 23)
+
+Polymorphism is a fundamental concept in object-oriented programming that allows objects of different classes to be treated as objects of a common base class. It enables code to be written in a way that is generic and reusable, providing flexibility and extensibility to the program.
+
+## Multiple Inheritance (Tutorial 24)
+
+Multiple inheritance is a feature in C++ that allows a class to inherit from multiple base classes. It enables a derived class to acquire properties and behaviors from multiple parent classes, combining their features into a single derived class.
+
+**Example**
+
+```
+class P
+{
+public:
+    void f() {}
+};
+
+class A : public P
+{
+};
+
+class B : public P
+{
+};
+
+class C : public A, public B
+{
+};
+
+int main()
+{
+    C c;
+    c.f(); //ERROR!
+    c.A::f();
+}
+```
