@@ -425,6 +425,8 @@ cout << ptr* << endl;
 
 Classes are user-defined data types that encapsulate data and functions into a single entity. They serve as a blueprint for creating objects, providing a way to define the structure, behavior, and interactions of objects in a program. Classes are the foundation of object-oriented programming (OOP) in C++.
 
+**Important:** _A difference between structs and classes is that the body of a struct is public by default, and that of a class is private._
+
 **Example**
 
 ```
@@ -458,3 +460,15 @@ Access modifiers are keywords that control the visibility and accessibility of c
 + **Protected:** The protected access modifier allows class members to be accessed by the class itself and its derived classes. Protected members are not accessible from outside the class hierarchy. They are typically used to provide restricted access to certain members within the class hierarchy.
 
 + **Private:** The private access modifier restricts the access to class members only within the class itself. Private members are not accessible by derived classes or external functions. They are used to encapsulate and hide implementation details, ensuring data integrity and promoting data abstraction.
+
+## Dynamic Memory
+
+Dynamic memory refers to the memory that is allocated and deallocated during program execution, as opposed to the static memory allocated for variables and objects at compile-time. In C++, dynamic memory is managed using the **new** and **delete** keywords.
+
+### Stack
+
+The stack is a region of memory used for storing local variables and function call information. Memory allocation on the stack is automatic and follows a last-in-first-out (LIFO) order. When a function is called, its local variables are allocated on the stack, and they are automatically deallocated when the function exits.
+
+### Heap
+
+The heap is a region of memory used for dynamic memory allocation. It allows for flexible allocation and deallocation of memory at runtime. Memory on the heap must be explicitly allocated and deallocated using new and delete. Unlike the stack, memory allocation on the heap is not automatic and requires manual management.
