@@ -40,7 +40,7 @@ _Your Code -> Compiler -> Machine Language_
 
 **Book Recommendation:** [Problem Solving with C++ by Walter Savitch](http://cslabcms.nju.edu.cn/problem_solving/images/4/46/Problem_Solving_with_C%2B%2B_%289th_Savitch%29.pdf)
 
-## Fundamental Data Types
+## Fundamental Data Types (Tutorial 1)
 
 ### Integral Types
 
@@ -85,7 +85,7 @@ negation operator !
 
 !false = true
 
-## If Statement
+## If Statement (Tutorial 2)
 
 ```
 if (Expression)
@@ -106,7 +106,7 @@ if (a == b)
 }
 ```
 
-## If/Else Statement
+### If/Else Statement
 
 **Example**
 
@@ -124,7 +124,7 @@ else
 }
 ```
 
-## Else If Statement
+### Else If Statement
 
 **Example**
 
@@ -160,7 +160,7 @@ _Identifiers are CASE SENSITIVE! myInt is not same as MyInt._
 
 **Some Illegal Indentifiers:** $myInt, +data+, 32MyChar
 
-## Functions
+## Functions (Tutorial 3-4)
 
 Function is a named block of code that performs a specific task or set of instructions. Functions are used to modularize code, promote reusability, and improve the organization and readability of programs.
 
@@ -174,7 +174,7 @@ int addNumbers(int a, int b)
 }
 ```
 
-## Increment Operators
+## Increment Operators (Tutorial 5)
 
 ```
 int i = 1;
@@ -193,7 +193,7 @@ i %= 1; //i was 2, now i is 0
 + Returns i
 + Then increments i by 1
 
-## While Loops
+## While Loops (Tutorial 5)
 
 While loop is a control flow statement that allows you to repeatedly execute a block of code as long as a specified condition remains true.
 
@@ -241,7 +241,7 @@ do
 5
 ```
 
-## For Loops
+## For Loops (Tutorial 6)
 
 For loop is a control flow statement that allows you to repeatedly execute a block of code for a specific number of times. It provides a compact way to define the initialization, condition, and update steps within a single line.
 
@@ -267,15 +267,15 @@ for (int i = 1; i <= 5; i++)
 1 2 3 4 5
 ```
 
-## References
+## References (Tutorial 7)
 
 References provide an alternative name (alias) for an existing variable. They allow you to create a new name that refers to the same memory location as the original variable. References are often used for function parameters, enabling pass-by-reference semantics, which allows modifications to the referenced variable within the function. Additionally, references are used to avoid unnecessary copying of objects, providing a more efficient way to work with large data structures.
 
-## Function Overloading
+## Function Overloading (Tutorial 8)
 
 Function overloading allows you to define multiple functions with the same name but different parameter lists. It enables you to create functions that perform similar operations but can accept different types or different numbers of arguments.
 
-## Strings
+## Strings (Tutorial 9)
 
 ### C Style Strings
 
@@ -309,19 +309,19 @@ void AddOne (const int A)
 }
 ```
 
-## And - Or Operators
+## And - Or Operators (Tutorial 10)
 
 **AND operator (&&):** The AND operator evaluates to true if and only if both of its operands are true. Otherwise, it evaluates to false.
 
 **OR operator (||):** The OR operator evaluates to true if at least one of its operands is true. It evaluates to false only if both operands are false.
 
-## Arrays
+## Arrays (Tutorial 11)
 
 Arrays are data structures that allow you to store multiple elements of the same type in contiguous memory locations. They provide a way to efficiently organize and access a collection of values.
 
 **Example:** `int myArray[5] = {2, 4, 6, 8, 10};`
 
-## Enums
+## Enums (Tutorial 12)
 
 Enums, short for enumerations, are user-defined data types in C++ that allow you to define a set of named values. They provide a way to define a collection of related constant values, making the code more readable and expressive.
 
@@ -346,7 +346,7 @@ int main()
 **Output**
 `Player status is: 1`
 
-## Switch Statements
+## Switch Statements (Tutorial 13)
 
 Switch statements provide a way to perform different actions based on the value of a variable or an expression. They offer an alternative control flow mechanism compared to if statements and can simplify code in certain scenarios. Switch statements often result in more efficient code execution compared to a series of if-else statements when the number of cases is large.
 
@@ -378,7 +378,7 @@ switch (day) {
 **Output**
 `Thursday`
 
-## Structs
+## Structs (Tutorial 14)
 
 Structs are user-defined data types that allow you to group together related variables of different types into a single unit. They provide a way to create complex data structures and represent entities with multiple attributes.
 
@@ -399,7 +399,7 @@ int main() {
 }
 ```
 
-## Pointers
+## Pointers (Tutorial 15)
 
 Pointers are variables that store memory addresses. They allow you to indirectly access and manipulate data stored in memory. Pointers play a crucial role in dynamic memory allocation and provide a way to interact with memory at a low level.
 
@@ -421,7 +421,7 @@ cout << ptr* << endl;
 2
 ```
 
-## Classes
+## Classes (Tutorial 16)
 
 Classes are user-defined data types that encapsulate data and functions into a single entity. They serve as a blueprint for creating objects, providing a way to define the structure, behavior, and interactions of objects in a program. Classes are the foundation of object-oriented programming (OOP) in C++.
 
@@ -443,15 +443,15 @@ Dog Spot;
 Dog Rex;
 ```
 
-## Constructors
+## Constructors (Tutorial 16)
 
 Constructors are special member functions of a class that are called automatically when an object of that class is created. They are used to initialize the object's data members and establish its initial state.
 
-## Inheritance
+## Inheritance (Tutorial 17)
 
 Inheritance is a fundamental concept in object-oriented programming that allows classes to inherit properties and behaviors from other classes. It facilitates code reuse, modularity, and the creation of hierarchies of related classes.
 
-## Access Modifiers
+## Access Modifiers (Tutorial 18)
 
 Access modifiers are keywords that control the visibility and accessibility of class members (variables and functions) from outside the class. They define the level of access granted to different parts of the program.
 
@@ -461,7 +461,7 @@ Access modifiers are keywords that control the visibility and accessibility of c
 
 + **Private:** The private access modifier restricts the access to class members only within the class itself. Private members are not accessible by derived classes or external functions. They are used to encapsulate and hide implementation details, ensuring data integrity and promoting data abstraction.
 
-## Dynamic Memory
+## Dynamic Memory (Tutorial 19)
 
 Dynamic memory refers to the memory that is allocated and deallocated during program execution, as opposed to the static memory allocated for variables and objects at compile-time. In C++, dynamic memory is managed using the **new** and **delete** keywords.
 
@@ -473,11 +473,11 @@ The stack is a region of memory used for storing local variables and function ca
 
 The heap is a region of memory used for dynamic memory allocation. It allows for flexible allocation and deallocation of memory at runtime. Memory on the heap must be explicitly allocated and deallocated using new and delete. Unlike the stack, memory allocation on the heap is not automatic and requires manual management.
 
-## Destructors
+## Destructors (Tutorial 20)
 
 Destructors are special member functions in C++ classes that are automatically called when an object of the class goes out of scope or is explicitly destroyed. They are used to perform cleanup and deallocation tasks before an object is destroyed and its memory is released.
 
-## The Static Keyword
+## The Static Keyword (Tutorial 21)
 
 In C++, the **static** keyword is used to declare entities (variables, functions, and classes) that have static storage duration and static linkage within a given scope.
 
@@ -487,6 +487,6 @@ In C++, the **static** keyword is used to declare entities (variables, functions
 
 **Static Functions:** When used with functions inside a class, the static keyword makes them independent of any specific instance of the class. Static member functions can be called using the class name, without requiring an object instance. They cannot access non-static members directly since they are not associated with any object.
 
-## Virtual Functions
+## Virtual Functions (Tutorial 22)
 
 In C++, a virtual function is a member function of the parent class that can be overridden in the child class.
