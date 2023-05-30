@@ -472,3 +472,7 @@ The stack is a region of memory used for storing local variables and function ca
 ### Heap
 
 The heap is a region of memory used for dynamic memory allocation. It allows for flexible allocation and deallocation of memory at runtime. Memory on the heap must be explicitly allocated and deallocated using new and delete. Unlike the stack, memory allocation on the heap is not automatic and requires manual management.
+
+## Destructors
+
+Destructors are special member functions in C++ classes that are automatically called when an object of the class goes out of scope or is explicitly destroyed. They are used to perform cleanup and deallocation tasks before an object is destroyed and its memory is released.
