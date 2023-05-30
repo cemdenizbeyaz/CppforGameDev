@@ -532,10 +532,10 @@ int main()
 
 Casting in C++ refers to the conversion of one data type to another. It allows you to explicitly change the interpretation or representation of a value from one type to another.
 
-**Static Cast:** `static_cast<new_type>(expression)`
-**Dynamic Cast:** `dynamic_cast<new_type>(expression)`
-**Const Cast:** `const_cast<new_type>(expression)`
-**Reinterpret Cast:** `reinterpret_cast<new_type>(expression)`
++ **Static Cast:** `static_cast<new_type>(expression)`
++ **Dynamic Cast:** `dynamic_cast<new_type>(expression)`
++ **Const Cast:** `const_cast<new_type>(expression)`
++ **Reinterpret Cast:** `reinterpret_cast<new_type>(expression)`
 
 ## Header Files
 
