@@ -10,21 +10,15 @@ public:
     }
 };
 
-class Melee : public Weapons
-{
-};
+class Melee : public Weapons {};
 
-class Swords : public Weapons
-{
-};
+class Swords : public Weapons {};
 
-class C : public Melee, public Swords
-{
-};
+class ValyrianSwords : public Melee, public Swords {};
 
 int main()
 {
-    C c;
-    // c.f(); -> ERROR!
-    c.Swords::Attack();
+    ValyrianSwords Blackfyre;
+    // Blackfyre.Attack(); -> ERROR!
+    Blackfyre.Swords::Attack();
 }
