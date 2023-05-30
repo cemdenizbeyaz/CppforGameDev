@@ -476,3 +476,13 @@ The heap is a region of memory used for dynamic memory allocation. It allows for
 ## Destructors
 
 Destructors are special member functions in C++ classes that are automatically called when an object of the class goes out of scope or is explicitly destroyed. They are used to perform cleanup and deallocation tasks before an object is destroyed and its memory is released.
+
+## The Static Keyword
+
+In C++, the **static** keyword is used to declare entities (variables, functions, and classes) that have static storage duration and static linkage within a given scope.
+
+**Static Variables:** When used with variables inside a function or a class, the static keyword gives them static storage duration. Unlike local variables, static variables retain their values between function calls. They are initialized only once, and their values persist throughout the program's execution.
+
+**Static Class Members:** Static members in a class are shared among all instances of the class. Static data members are shared variables across all instances, while static member functions are shared methods. They are associated with the class itself, not with individual objects.
+
+**Static Functions:** When used with functions inside a class, the static keyword makes them independent of any specific instance of the class. Static member functions can be called using the class name, without requiring an object instance. They cannot access non-static members directly since they are not associated with any object.
