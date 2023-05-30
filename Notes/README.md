@@ -486,3 +486,7 @@ In C++, the **static** keyword is used to declare entities (variables, functions
 **Static Class Members:** Static members in a class are shared among all instances of the class. Static data members are shared variables across all instances, while static member functions are shared methods. They are associated with the class itself, not with individual objects.
 
 **Static Functions:** When used with functions inside a class, the static keyword makes them independent of any specific instance of the class. Static member functions can be called using the class name, without requiring an object instance. They cannot access non-static members directly since they are not associated with any object.
+
+## Virtual Functions
+
+In C++, a virtual function is a member function of the parent class that can be overridden in the child class.
