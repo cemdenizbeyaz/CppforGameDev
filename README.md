@@ -38,3 +38,21 @@ _Your Code -> Compiler -> Machine Language_
     + Build automation tools
     + Debugger
     + Example: Visual Studio
+
+## Fundamental Data Types
+
+### Integral Types
+
++ int: 4 bytes
+    + short <= int
+    + long >= int
+
++ char: 1 byte
++ bool: 1 byte
+
+### Floating Point Types
+
++ float: 4 bytes
++ double >= float
+
+_7289 = 7.289 x 10^3 = 7.289e3_
