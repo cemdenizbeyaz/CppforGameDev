@@ -77,12 +77,12 @@ a is true (ASCII Code: 097)
 
 ## Relational Operators
 
-greater than >
-less than <
-greater than or equal >=
-equal to ==
-not equal to !=
-negation operator !
++ greater than >
++ less than <
++ greater than or equal >=
++ equal to ==
++ not equal to !=
++ negation operator !
 
 !false = true
 
@@ -173,4 +173,97 @@ int addNumbers(int a, int b)
     int sum = a + b;
     return sum;
 }
+```
+
+## Increment Operators
+
+```
+int i = 1;
+i += 1; //i is 2
+i -= 1; //i was 2, now i is 1
+i *= 6; //i was 1, now i is 6
+i /= 3; //i was 6, now i is 2
+i %= 1; //i was 2, now i is 0
+```
+
+**Preincrement:** ++i
++ First increments i by 1
++ Returns the result
+
+**Postincrement:** i++
++ Returns i
++ Then increments i by 1
+
+## While Loops
+
+While loop is a control flow statement that allows you to repeatedly execute a block of code as long as a specified condition remains true.
+
+**Example**
+
+```
+int i = 1;
+while (i <= 5)
+{
+    cout << i << " ";
+    i++;
+}
+```
+
+**Output**
+
+```
+1 2 3 4 5
+```
+
++ **break:** It is used within loops to immediately terminate the loop and move to the next statement outside the loop. It allows you to exit the loop prematurely based on a certain condition.
+
++ **continue:** It is used within loops to skip the remaining code in the loop body for the current iteration and move to the next iteration. It allows you to skip specific iterations based on a certain condition.
+
+### Difference Between While and Do-While Loops
+
+**While Loop:** Condition is checked first, and if false initially, the loop may never execute.
+
+**Do-While Loop:** Loop body is executed first, and then the condition is checked. It ensures that the loop body executes at least once.
+
+**Example**
+
+```
+int i = 5;
+do
+{
+    cout << i << " ";
+    i++;
+} while (i <= 3);
+```
+
+**Output**
+
+```
+5
+```
+
+## For Loops
+
+For loop is a control flow statement that allows you to repeatedly execute a block of code for a specific number of times. It provides a compact way to define the initialization, condition, and update steps within a single line.
+
+**Examples**
+
+```
+for (initialization; condition; update)
+{
+    // Code to be executed
+}
+```
+
+```
+for (int i = 1; i <= 5; i++)
+{
+    cout << i << " ";
+}
+```
+
+**Output**
+
+```
+1 2 3 4 5
 ```
