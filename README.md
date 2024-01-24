@@ -56,3 +56,89 @@ _Your Code -> Compiler -> Machine Language_
 + double >= float
 
 _7289 = 7.289 x 10^3 = 7.289e3_
+
+## Statements and Expressions
+
+**Expression:** Combines things, returns a value.
++ Example: 2+2, "hello world"
+
+**Statement:** Execute in sequence, carry out some action.
++ Example: int x;
+
+## Truth Values
+
+0 is false
+1 is true
+-1 is true
+0.00 is false
+0.000 is false
+0.0001 is true
+a is true (ASCII Code: 097)
+
+## Relational Operators
+
+greater than >
+less than <
+greater than or equal >=
+equal to ==
+not equal to !=
+negation operator !
+
+!false = true
+
+## If Statement
+
+```
+if (Expression)
+{
+    Statements
+}
+```
+
+**Example**
+
+```
+int a = 4;
+int b = 4;
+
+if (a == b)
+{
+    cout << "Hello World!";
+}
+```
+
+### If/Else Statement
+
+**Example**
+
+```
+int a = 4;
+int b = 4;
+
+if (a == b)
+{
+    cout << "a is equal to b.";
+}
+else
+{
+    cout << "a and b are not equal!";
+}
+```
+
+### Else If Statement
+
+**Example**
+
+```
+int a = 4;
+int b = 4;
+
+if (a == b)
+{
+    cout << "a is equal to b.";
+}
+else if (a != b)
+{
+    cout << "a and b are not equal!";
+}
+```
