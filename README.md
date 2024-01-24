@@ -142,3 +142,35 @@ else if (a != b)
     cout << "a and b are not equal!";
 }
 ```
+
+## Identifiers
+
+**Identifier:** A name assigned to a program element:
++ variable
++ type
++ function
++ namespace
++ template
++ class
+
+_You can use letters, numbers and underscores. Like..._
+
+**Example:** myFirstInt, MySecondInt, x_coordinate, myNumber2
+
+_Identifiers are CASE SENSITIVE! myInt is not same as MyInt._
+
+**Some Illegal Indentifiers:** $myInt, +data+, 32MyChar
+
+## Functions
+
+Function is a named block of code that performs a specific task or set of instructions. Functions are used to modularize code, promote reusability, and improve the organization and readability of programs.
+
+**Example**
+
+```
+int addNumbers(int a, int b) 
+{
+    int sum = a + b;
+    return sum;
+}
+```
