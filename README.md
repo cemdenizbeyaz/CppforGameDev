@@ -311,3 +311,87 @@ void AddOne (const int A)
 **AND operator (&&):** The AND operator evaluates to true if and only if both of its operands are true. Otherwise, it evaluates to false.
 
 **OR operator (||):** The OR operator evaluates to true if at least one of its operands is true. It evaluates to false only if both operands are false.
+
+## Arrays
+
+Arrays are data structures that allow you to store multiple elements of the same type in contiguous memory locations. They provide a way to efficiently organize and access a collection of values.
+
+**Example:** `int myArray[5] = {2, 4, 6, 8, 10};`
+
+## Enums
+
+Enums, short for enumerations, are user-defined data types in C++ that allow you to define a set of named values. They provide a way to define a collection of related constant values, making the code more readable and expressive.
+
+**Example**
+
+```
+enum PlayerStatus
+{
+    PS_Crouched, // 0
+    PS_Standing, // 1
+    PS_Running, // 2
+    PS_Sprinting //3
+};
+
+int main()
+{
+    PlayerStatus myStatus = PS_Standing;
+    cout << "Player status is: " << myStatus << endl;
+}
+```
+
+**Output**
+`Player status is: 1`
+
+## Switch Statements
+
+Switch statements provide a way to perform different actions based on the value of a variable or an expression. They offer an alternative control flow mechanism compared to if statements and can simplify code in certain scenarios. Switch statements often result in more efficient code execution compared to a series of if-else statements when the number of cases is large.
+
+**Example**
+
+```
+int day = 4;
+switch (day) {
+    case 1:
+        std::cout << "Monday" << std::endl;
+        break;
+    case 2:
+        std::cout << "Tuesday" << std::endl;
+        break;
+    case 3:
+        std::cout << "Wednesday" << std::endl;
+        break;
+    case 4:
+        std::cout << "Thursday" << std::endl;
+        break;
+    case 5:
+        std::cout << "Friday" << std::endl;
+        break;
+    default:
+        std::cout << "Weekend" << std::endl;
+}
+```
+
+**Output**
+`Thursday`
+
+## Structs
+
+Structs are user-defined data types that allow you to group together related variables of different types into a single unit. They provide a way to create complex data structures and represent entities with multiple attributes.
+
+**Example**
+
+```
+struct Person {
+    string name;
+    int age;
+    string address;
+};
+
+int main() {
+    Person person1;
+    person1.name = "John Doe";
+    person1.age = 30;
+    person1.address = "123 Main Street";
+}
+```
