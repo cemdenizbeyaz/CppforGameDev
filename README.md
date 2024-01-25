@@ -467,3 +467,83 @@ Access modifiers are keywords that control the visibility and accessibility of c
 ## Encapsulation
 
 Encapsulation is one of the four fundamental principles of object-oriented programming (OOP) and is a key concept in C++. It refers to the bundling of data (attributes or properties) and the methods (functions) that operate on that data into a single unit, known as a class. The idea is to hide the internal implementation details of a class and expose only the necessary functionalities to the outside world.
+
+## Dynamic Memory
+
+Dynamic memory refers to the memory that is allocated and deallocated during program execution, as opposed to the static memory allocated for variables and objects at compile-time. In C++, dynamic memory is managed using the **new** and **delete** keywords.
+
+### Stack
+
+The stack is a region of memory used for storing local variables and function call information. Memory allocation on the stack is automatic and follows a last-in-first-out (LIFO) order. When a function is called, its local variables are allocated on the stack, and they are automatically deallocated when the function exits.
+
+### Heap
+
+The heap is a region of memory used for dynamic memory allocation. It allows for flexible allocation and deallocation of memory at runtime. Memory on the heap must be explicitly allocated and deallocated using new and delete. Unlike the stack, memory allocation on the heap is not automatic and requires manual management.
+
+## Destructors
+
+Destructors are special member functions in C++ classes that are automatically called when an object of the class goes out of scope or is explicitly destroyed. They are used to perform cleanup and deallocation tasks before an object is destroyed and its memory is released.
+
+## The Static Keyword
+
+In C++, the **static** keyword is used to declare entities (variables, functions, and classes) that have static storage duration and static linkage within a given scope.
+
+**Static Variables:** When used with variables inside a function or a class, the static keyword gives them static storage duration. Unlike local variables, static variables retain their values between function calls. They are initialized only once, and their values persist throughout the program's execution.
+
+**Static Class Members:** Static members in a class are shared among all instances of the class. Static data members are shared variables across all instances, while static member functions are shared methods. They are associated with the class itself, not with individual objects.
+
+**Static Functions:** When used with functions inside a class, the static keyword makes them independent of any specific instance of the class. Static member functions can be called using the class name, without requiring an object instance. They cannot access non-static members directly since they are not associated with any object.
+
+## Virtual Functions
+
+In C++, a virtual function is a member function of the parent class that can be overridden in the child class.
+
+## Polymorphism
+
+Polymorphism is a fundamental concept in object-oriented programming that allows objects of different classes to be treated as objects of a common base class. It enables code to be written in a way that is generic and reusable, providing flexibility and extensibility to the program.
+
+## Multiple Inheritance
+
+Multiple inheritance is a feature in C++ that allows a class to inherit from multiple base classes. It enables a derived class to acquire properties and behaviors from multiple parent classes, combining their features into a single derived class.
+
+**Example**
+
+```
+class P
+{
+public:
+    void f() {}
+};
+
+class A : public P
+{
+};
+
+class B : public P
+{
+};
+
+class C : public A, public B
+{
+};
+
+int main()
+{
+    C c;
+    c.f(); //ERROR!
+    c.A::f();
+}
+```
+
+## Casting and Type Conversion
+
+Casting in C++ refers to the conversion of one data type to another. It allows you to explicitly change the interpretation or representation of a value from one type to another.
+
++ **Static Cast:** `static_cast<new_type>(expression)`
++ **Dynamic Cast:** `dynamic_cast<new_type>(expression)`
++ **Const Cast:** `const_cast<new_type>(expression)`
++ **Reinterpret Cast:** `reinterpret_cast<new_type>(expression)`
+
+## Header Files
+
+In C++, header files are used to define the interfaces and declarations of classes, functions, variables, and constants that are used across multiple source code files. They provide a way to organize and modularize code by separating the declaration (interface) from the implementation.
