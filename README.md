@@ -401,3 +401,25 @@ int main() {
     person1.address = "123 Main Street";
 }
 ```
+
+## Pointers
+
+Pointers are variables that store memory addresses. They allow you to indirectly access and manipulate data stored in memory. Pointers play a crucial role in dynamic memory allocation and provide a way to interact with memory at a low level.
+
+**Example**
+
+```
+int MyInt = 2;
+int* ptr;
+ptr = &MyInt;
+
+cout << ptr << endl;
+cout << *ptr << endl;
+```
+
+**Output**
+
+```
+0x61ff14
+2
+```
