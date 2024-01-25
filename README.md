@@ -449,3 +449,21 @@ Dog Rex;
 ## Constructors
 
 Constructors are special member functions of a class that are called automatically when an object of that class is created. They are used to initialize the object's data members and establish its initial state.
+
+## Inheritance
+
+Inheritance is a fundamental concept in object-oriented programming that allows classes to inherit properties and behaviors from other classes. It facilitates code reuse, modularity, and the creation of hierarchies of related classes.
+
+## Access Modifiers
+
+Access modifiers are keywords that control the visibility and accessibility of class members (variables and functions) from outside the class. They define the level of access granted to different parts of the program.
+
++ **Public:** The public access modifier allows class members to be accessed from anywhere in the program. Public members are accessible by objects of the class, as well as external functions and other classes.
+
++ **Protected:** The protected access modifier allows class members to be accessed by the class itself and its derived classes. Protected members are not accessible from outside the class hierarchy. They are typically used to provide restricted access to certain members within the class hierarchy.
+
++ **Private:** The private access modifier restricts the access to class members only within the class itself. Private members are not accessible by derived classes or external functions. They are used to encapsulate and hide implementation details, ensuring data integrity and promoting data abstraction.
+
+## Encapsulation
+
+Encapsulation is one of the four fundamental principles of object-oriented programming (OOP) and is a key concept in C++. It refers to the bundling of data (attributes or properties) and the methods (functions) that operate on that data into a single unit, known as a class. The idea is to hide the internal implementation details of a class and expose only the necessary functionalities to the outside world.
