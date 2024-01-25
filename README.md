@@ -1,6 +1,12 @@
 # Learn C++ for Game Development Course
 
-I created this repository for my work in the [Learn C++ for Game Development](https://www.udemy.com/course/learn-cpp-for-ue4-unit-1/) course I took from Stephen Ulibarri (Druid Mechanics).
+I created this repository for my work in the [Learn C++ for Game Development](https://www.udemy.com/course/learn-cpp-for-ue4-unit-1/) course I took from Stephen Ulibarri (Druid Mechanics). 
+
++ I'm taking this course as a refresher in C++. I also took notes throughout the course, which you can access below and use as you wish.
+
++ You can also access the projects I've made on the topics Stephen covered during the course in the Projects folder.
+
+If you want to learn C++ and Unreal Engine for game development or need a refresher on these topics, I highly recommend Stephen's courses. You can visit Stephen's Udemy account at the link I left above and check out his courses.
 
 # Lesson Notes
 
